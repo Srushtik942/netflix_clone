@@ -10,7 +10,7 @@ const GptMovieSuggestion = () => {
     if (movieNames && movieResults.length > 0) {
       setLoading(false);
     }
-  }, [movieNames, movieResults]);
+  }, [movieNames, movieResults,setLoading]);
 
 
 

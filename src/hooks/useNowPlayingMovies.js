@@ -20,7 +20,7 @@
 
   useEffect(()=>{
   getNowPlaying();
-  },[]);
+  },);
   };
 
   export default useNowPlayingMovies;
