@@ -46,7 +46,7 @@ const Header = () => {
     return()=> unsubscribe();
 
 
-  },[]);
+  },[dispatch, navigate]);
 
 const handleGPTSerachClick = ()=>{
   //toggle gpt serach button

@@ -3,19 +3,19 @@ import language  from '../utils/languageConstant';
 import { useSelector } from 'react-redux';
 import openai from '../utils/openai';
 import { useState } from 'react';
-import { addGptMovieResult } from '../utils/GptSlice';
+// import { addGptMovieResult } from '../utils/GptSlice';
 const GptSerachBar = () => {
 
     const langkey = useSelector((store)=>store.config.language);
     const searchText = useRef(null);
-    const [errorMessage, setErrorMessage] = useState("");
-    const [recommendations, setRecommendations] = useState([]);
+    // const [errorMessage, setErrorMessage] = useState("");
+    const [recommendations] = useState([]);
 
 
     const handleGPTSearchClick = async ()=>{
       console.log(searchText.current.value);
 
-      setErrorMessage("");
+      // setErrorMessage("");
 
       //make an api call to gemini and get movie results
 

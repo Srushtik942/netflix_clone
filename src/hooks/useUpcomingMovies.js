@@ -20,7 +20,7 @@
 
   useEffect(()=>{
     getUpcomingMovies();
-  },[]);
+  });
   };
 
   export default useUpcomingMovies;

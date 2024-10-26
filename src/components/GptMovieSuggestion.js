@@ -4,7 +4,7 @@ import { useEffect,useState } from "react";
 
 const GptMovieSuggestion = () => {
   const { movieResults, movieNames } = useSelector((store) => store.gpt);
-  const [loading, setLoading] = useState(true);
+  const [ setLoading] = useState(true);
 
   useEffect(() => {
     if (movieNames && movieResults.length > 0) {

@@ -20,7 +20,7 @@
 
   useEffect(()=>{
     getTopratedMovies();
-  },[]);
+  });
   };
 
   export default useTopratedMovies;

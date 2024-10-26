@@ -20,14 +20,13 @@ const useFetchTrailerVideo = (movieId)=>{
         console.log(trailer);
 
         dispatch(addTrailerVideo(trailer));
-
     };
 
     useEffect(()=>{
 
         getMovieVideos();
 
-    },[]);
+    });
 }
 
 export default useFetchTrailerVideo;

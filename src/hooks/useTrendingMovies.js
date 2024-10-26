@@ -19,7 +19,7 @@
 
   useEffect(()=>{
     getTrendingMovies();
-  },[]);
+  });
   };
 
   export default useTrendingMovies;

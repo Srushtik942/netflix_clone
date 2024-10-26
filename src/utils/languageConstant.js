@@ -1,4 +1,4 @@
-import GPTSearch from "../components/GPTSearch";
+// import GPTSearch from "../components/GPTSearch";
 
 const language = {
     en:
