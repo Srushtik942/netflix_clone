@@ -6,7 +6,7 @@ import {addUser, removeUser} from "../utils/userSlice";
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
-import { toggleGPTSearchView } from '../utils/GptSlice';
+import { toggleGptSearchView } from '../utils/GptSlice';
 import { SUPPORTED_LANGUAGES } from "../utils/constants";
 import {changeLanguage} from "../utils/configSlice";
 
@@ -50,7 +50,7 @@ const Header = () => {
 
 const handleGPTSerachClick = ()=>{
   //toggle gpt serach button
-  dispatch (toggleGPTSearchView());
+  dispatch (toggleGptSearchView());
 
 }
 
